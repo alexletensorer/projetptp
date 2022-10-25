@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center">TRANSI<div class="T">T</div>IONS PRO Nouvelle Aquitaine</h1>
+        <p id="description" class="description text-center">
+          Merci de partager votre experience sur notre plateforme
+        </p>
+    </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Nom et Prénom</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Votre nom et prénom"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Courriel</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Votre courriel"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number"
+            >Âge<span class="clue">(optionel)</span></label
+          >
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="10"
+            max="99"
+            class="form-control"
+            placeholder="Votre âge"
+          />
+        </div>
+        <div class="form-group">
+          <p>Quel est votre statut professionnel?</p>
+          <select id="dropdown" name="role" class="form-control" required>
+            <option disabled selected value>Sélectionnez votre statut</option>
+            <option value="student">Salairé</option>
+            <option value="job">Travailleur Non Salairé</option>
+            <option value="learner">Etudiant</option>
+            <option value="preferNo">Retraité</option>
+            <option value="other">Sans emploi</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>Recommandriez-vous les services de Transition Pro à votre entourage?</p>
+          <label>
+            <input
+              name="user-recommend"
+              value="definitely"
+              type="radio"
+              class="input-radio"
+              checked
+            />Absolument!</label
+          >
+          <label>
+            <input
+              name="user-recommend"
+              value="maybe"
+              type="radio"
+              class="input-radio"
+            />Peut-être</label
+          >
+
+          <label
+            ><input
+              name="user-recommend"
+              value="not-sure"
+              type="radio"
+              class="input-radio"
+            />Non</label
+          >
+        </div>
+
+        <div class="form-group">
+          <p>Avez-vous été accompagné par un(e) Conseiller(e) en Evolution Professionnelle?</p>
+          <select id="most-like" name="mostLike" class="form-control" required>
+            <option disabled selected value>Choissiez une option</option>
+            <option value="challenges">Oui</option>
+            <option value="projects">Non</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>
+            Quel dispositif utilisez-vous?
+            <span class="clue"></span>
+          </p>
+
+          <label
+            ><input
+              name="prefer"
+              value="front-end-projects"
+              type="checkbox"
+              class="input-checkbox"
+            />Dispositif PTP</label
+          >
+          <label>
+            <input
+              name="prefer"
+              value="back-end-projects"
+              type="checkbox"
+              class="input-checkbox"
+            />Dispositif TransCo</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="data-visualization"
+              type="checkbox"
+              class="input-checkbox"
+            />Dispositif démissionnaire</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="challenges"
+              type="checkbox"
+              class="input-checkbox"
+            />Dispositif VAE</label
+          >
+            </div>
+
+        <div class="form-group">
+          <p>Des commentaires ou suggestions?</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Entrez vos commentaires ici..."
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Soumettre
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
